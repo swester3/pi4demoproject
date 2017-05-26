@@ -1,0 +1,10 @@
+# Citation/License/Copyright:,"LeBauer, David, Michael Dietze, Rob Kooper, Steven Long, Patrick Mulrooney, Gareth Scott Rohde, Dan Wang (2010).  Biofuel Ecophysiological Traits and Yields Database (BETYdb), Energy Biosciences Institute, University of Illinois at Urbana-Champaign.  doi:10.13012/J8H41PB9
+All public data in BETYdb is made available under the Open Data Commons Attribution License (ODC-By) v1.0. You are free to share, create, and adapt its contents.  Data with an access_level field and value &lt;= 2 is not covered by this license but may be available for use with consent.
+Copyright © 2010-2014 Energy Biosciences Institute"
+#
+# Contact:,betydb@gmail.com
+#
+# SQL query:,"SELECT ""traits_and_yields_view"".* FROM ""traits_and_yields_view""  WHERE (traits_and_yields_view.access_level >= 4) AND ((LOWER(sitename) LIKE LOWER('%populous%') OR LOWER(city) LIKE LOWER('%populous%') OR LOWER(scientificname) LIKE LOWER('%populous%') OR LOWER(commonname) LIKE LOWER('%populous%') OR LOWER(author) LIKE LOWER('%populous%') OR LOWER(trait) LIKE LOWER('%populous%') OR LOWER(trait_description) LIKE LOWER('%populous%') OR LOWER(cultivar) LIKE LOWER('%populous%') OR LOWER(entity) LIKE LOWER('%populous%') OR citation_year::text = 'populous')) AND (checked >= 1)"
+#
+# Time of query:,2017-05-26 16:46:07 UTC
+#
